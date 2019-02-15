@@ -1,0 +1,182 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 33,
+        "name": "Create a new Post",
+        "description": "",
+        "id": "posting-flow-in-sminq-mobile-app;create-a-new-post;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "line": 9,
+            "name": "the Sminq Mobile App is opened on \"local\"",
+            "keyword": "Given "
+          },
+          {
+            "line": 10,
+            "name": "I allow \"Notification\" access",
+            "keyword": "When "
+          },
+          {
+            "line": 11,
+            "name": "I login with Google",
+            "keyword": "And "
+          },
+          {
+            "line": 12,
+            "name": "I allow \"Google Sign In\" access",
+            "keyword": "And "
+          },
+          {
+            "line": 13,
+            "name": "I enter \"saviant.sminq\" as username and \"Sminq@123\" as password",
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "line": 14,
+            "name": "I allow \"Sminq Location\" access",
+            "keyword": "And "
+          },
+          {
+            "line": 15,
+            "name": "I allow \"iOS Location\" access",
+            "keyword": "And "
+          },
+          {
+            "line": 16,
+            "name": "the home page is displayed",
+            "keyword": "Then "
+          },
+          {
+            "line": 17,
+            "name": "I click on the camera icon to create a post",
+            "keyword": "When "
+          },
+          {
+            "line": 18,
+            "name": "I allow \"Sminq Camera\" access",
+            "keyword": "And "
+          },
+          {
+            "line": 19,
+            "name": "I allow \"iOS Camera\" access",
+            "keyword": "And "
+          },
+          {
+            "line": 20,
+            "name": "I allow \"Sminq Microphone\" access",
+            "keyword": "And "
+          },
+          {
+            "line": 21,
+            "name": "I allow \"iOS Microphone\" access",
+            "keyword": "And "
+          },
+          {
+            "line": 22,
+            "name": "I click a photograph",
+            "keyword": "And "
+          },
+          {
+            "line": 23,
+            "name": "I select the first location as \"My_Location\"",
+            "keyword": "And "
+          },
+          {
+            "line": 24,
+            "name": "I select mood icon \"MEH\"",
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "line": 25,
+            "name": "I click on \"DONE\"",
+            "keyword": "And "
+          },
+          {
+            "line": 26,
+            "name": "I click on \"POST\"",
+            "keyword": "And "
+          },
+          {
+            "line": 27,
+            "name": "the post should be added to the home page",
+            "keyword": "Then "
+          },
+          {
+            "line": 28,
+            "name": "the location of the post should be \"My_Location\"",
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7055225477,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "the mood of the post should be \"MEH\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MEH",
+                  "offset": 32
+                }
+              ],
+              "location": "PostFlowStepDef.the_mood_of_the_post_should_be(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Posting"
+          },
+          {
+            "line": 7,
+            "name": "@TestCase-14"
+          },
+          {
+            "line": 1,
+            "name": "@P1"
+          },
+          {
+            "line": 7,
+            "name": "@Regression"
+          },
+          {
+            "line": 7,
+            "name": "@BVT"
+          }
+        ]
+      }
+    ],
+    "name": "Posting Flow in Sminq Mobile App",
+    "description": "As a user\nI should be able to click photos and post them with moods\nSo that I can publish my posts on my timeline",
+    "id": "posting-flow-in-sminq-mobile-app",
+    "keyword": "Feature",
+    "uri": "posting/test/CreatePost.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Posting"
+      },
+      {
+        "line": 1,
+        "name": "@P1"
+      }
+    ]
+  }
+]
